@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth"> 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Janu Putra — Web Developer</title>
+<title>Janu Putra | Portofolio</title>
 <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="font-body antialiased">
+<body class="font-body antialiased bg-gray-50">
 
   <!-- NAV -->
-  <header class="sticky top-0 z-40 bg-gray-900  border-b">
-    <nav class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-      <h1 href="#top" class="font-display text-xl font-bold text-white">Portofolio</h1>
-      <div class="hidden sm:flex items-center gap-10 text-sm nav-link font-bold text-white">
+  <header class="sticky top-0 bg-gray-900">
+    <nav class="max-w-4xl mx-auto py-4 flex items-center justify-between">
+      <h1 class="font-display text-xl font-bold text-white">Portofolio</h1>
+      <div class="hidden sm:flex items-center gap-10 text-sm font-bold text-white">
+        <a href="#Home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skill</a>
         <a href="#experience" class="nav-link">Experience</a>
@@ -22,13 +23,13 @@
     </nav>
   </header>
 
-  <main id="top">
+  <main class="bg-gray-50">
 
     <!-- HERO -->
-    <section class="max-w-4xl mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20">
-      <div class="grid md:grid-cols-[1.3fr_1fr] gap-10 items-center">
+    <section id="Home"class=" scroll-mt-30 max-w-4xl mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20  rounded-2xl h-130 mt-12 bg-white shadow-xl">
+      <div class="grid md:grid-cols-[1.3fr_1fr] gap-10 items-center ml-3">
         <div>
-          <h1 class="text-2xl">I Nyoman Redika Janu Putra</h1>
+          <h1 class="text-2xl font-semibold">I Nyoman Redika Janu Putra</h1>
           <p class="mt-4 text-md">You Can Call Me</p>
           <h1 class="font-display text-6xl mt-2 font-bold">Janu Putra</h1>
           <p class="mt-4 text-lg">Beginner Web Developer</p>
@@ -36,24 +37,24 @@
             Informatics Engineering student who is currently studying web development from designing the appearance to tidying up the logic behind it.
           </p>
           <div class="mt-7 flex gap-3">
-            <a href="#contact" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border">Hubungi saya</a>
+            <a href="#contact" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border bg-gray-900 text-white">Hubungi saya</a>
             <a href="#skills" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border">Lihat keahlian</a>
           </div>
         </div>
         <!--Lingkaran-->
         <div class="justify-self-center">
-          <div class="w-44 h-44 md:w-56 md:h-56 rounded-full flex items-center justify-center border">
-            <img src="Asset/Janu12.jpeg"
+    <div class="w-44 h-44 md:w-68 md:h-68 bg-gray-900 rounded-full ml-15 flex items-center justify-center">
+        <img 
+            src="Asset/Janu12.jpeg" 
             alt="foto profil Janu Putra"
-            class="w-full h-full object-cover">
-          </div>
-        </div>
+            class="w-44 h-44 md:w-64 md:h-64 rounded-full object-cover">
+    </div>
+  </div>
       </div>
     </section>
-
     <!-- ABOUT -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-16 border-t">
-      <h2 class="section-title text-center text-3xl">About Me</h2>
+    <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+      <h2 class="section-title text-center text-3xl font-bold">About Me</h2>
       <div class="mt-10 mx-auto max-w-2xl text-md leading-relaxed">
         <p>
           I'm a Software Engineering Technology student who has been interested in web development since I started college. I enjoy learning how a web page is built—from its structure and appearance to the simple interactions within it.
@@ -61,84 +62,92 @@
         <p class="mt-4">
          I'm currently still learning and continuing to train myself through small projects, while getting used to writing clean and easy-to-understand code. I'm open to internship opportunities and collaborative projects to further hone my skills.
         </p>
-      </div>
+      </div>    
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="max-w-4xl mx-auto px-6 py-16 border-t">
-      <h2 class="section-title text-center text-3xl">Technical Skills</h2>
+      <h2 class="section-title text-center text-3xl font-bold">Technical Skills</h2>
       <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto ">
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">HTML</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">CSS</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">JavaScript</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">Tailwind CSS</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">Git &amp; GitHub</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-medium border">Figma</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">HTML</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">CSS</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">JavaScript</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Tailwind CSS</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Git &amp; GitHub</div>
+        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Figma</div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="max-w-4xl mx-auto px-6 py-16 border-t">
-      <h2 class="section-title text-center text-3xl">Experience</h2>
-      <div class="mt-10 grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-        <div class="border-l-2 pl-4">
-          <span class="text-xs">2024 — Sekarang</span>
-          <h3 class="font-display text-lg mt-1">Proyek Kampus</h3>
-          <p class="mt-2 text-sm leading-relaxed">
-            Membangun beberapa proyek web sederhana sebagai bagian dari tugas
-            perkuliahan, mulai dari landing page hingga aplikasi CRUD dasar.
-          </p>
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-16  rounded-2xl bg-white shadow-xl mb-20">
+      <h2 class="section-title text-center text-3xl font-bold ">Experience</h2>
+        <h4 class="text-center py-6 font-semibold text-xl">Poster Design Competition Participant</h4>
+      <div class="mt-10 grid sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+        <div class="text-center">
+          <span class="text-base font-semibold">Participant • 2024</span>
+          <div>
+            <img  src="Asset/SerifikatJanu2.png" class="py-3">
+            <p class="py-4 ">Participated in a poster design competition at
+              Politeknik Negeri Bali, focusing on renewable
+              technology and environmental awareness.</p>
+          </div>
         </div>
-        <div class="border-l-2 pl-4">
-          <span class="text-xs">2023 — 2024</span>
-          <h3 class="font-display text-lg mt-1">Belajar Mandiri</h3>
-          <p class="mt-2 text-sm leading-relaxed">
-            Mengikuti kelas daring dan dokumentasi resmi untuk memperdalam
-            HTML, CSS, dan dasar JavaScript secara konsisten.
-          </p>
+        <div class="text-center">
+          <span class="text-base font-semibold"> Participant • 2025</span>
+          <div>
+            <img src="Asset/Sertifikat1.png" class="py-3">
+            <p class="py-4">Participated in Technoversary 2025, a poster design
+              competition focused on technology and its impact
+              on society.</p>
+          </div>
         </div>
+      </div>
+      <div>
+        <!--Project-->
+        <h2 class="section-title text-center py-8 text-3xl font-bold">My Project</h2>
+        
       </div>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="max-w-4xl mx-auto px-6 py-16 border-t">
-      <h2 class="section-title text-center text-3xl">Pendidikan</h2>
-      <div class="mt-10 mx-auto max-w-2xl border-t pt-8" style="border-color: var(--line);">
-        <dl class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-4 text-sm">
-          <dt class="font-semibold" style="color: var(--ink);">Kampus</dt>
-          <dd style="color: var(--ink-soft);">Universitas Pendidikan Ganesha</dd>
-          <dt class="font-semibold" style="color: var(--ink);">Fakultas</dt>
-          <dd style="color: var(--ink-soft);">Teknik Dan Kejuruan</dd>
-          <dt class="font-semibold" style="color: var(--ink);">Jurusan</dt>
-          <dd style="color: var(--ink-soft);">Teknik Informatika</dd>
-          <dt class="font-semibold" style="color: var(--ink);">Program Studi</dt>
-          <dd style="color: var(--ink-soft);">Teknologi Rekayasa Perangkat Lunak</dd>
+    <section id="education" class="max-w-4xl mx-auto px-6 py-16 mb-20 rounded-2xl bg-white shadow-xl">
+      <h2 class="section-title text-center text-3xl font-bold">Education</h2>
+      <div class="mt-10 mx-auto max-w-2xl  border-t pt-9"> 
+        <dl class=" grid grid-cols-[auto_1fr] gap-x-6 gap-y-4 text-ms">
+          <dt class="font-bold ">Campus</dt>
+          <dd class="font-semibold">: Universitas Pendidikan Ganesha</dd>
+          <dt class="font-bold">Faculty</dt>
+          <dd class="font-semibold">: Teknik Dan Kejuruan</dd>
+          <dt class="font-bold">Major</dt>
+          <dd class="font-semibold">: Teknik Informatika</dd>
+          <dt class="font-bold">Study Program</dt>
+          <dd class="font-semibold">: Teknologi Rekayasa Perangkat Lunak</dd>
         </dl>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-16 border-t" style="border-color: var(--line);">
-      <h2 class="section-title text-center text-3xl">Kontak</h2>
-      <div class="mt-10 max-w-md mx-auto space-y-3 text-sm">
-        <a href="mailto:komangredika@gmail.com" class="flex items-center gap-3 py-3 border-b" style="border-color: var(--line); color: var(--ink);">
-          <span style="color: var(--accent);">✉</span>
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-12 border-t">
+      <h2 class="section-title text-center py-3 text-3xl font-bold">Contact</h2>
+      <div class="mt-10 max-w-md mx-auto space-y-3 text-sm py-6 px-6 rounded-lg bg-white shadow-">
+        <a href="mailto:komangredika@gmail.com" class="flex items-center gap-3 py-3 border-b">
+          <span>✉</span>
           <span>komangredika@gmail.com</span>
         </a>
-        <a href="tel:087648927472" class="flex items-center gap-3 py-3 border-b" style="border-color: var(--line); color: var(--ink);">
-          <span style="color: var(--accent);">☎</span>
+        <a href="tel:087648927472" class="flex items-center gap-3 py-3 border-b">
+          <span>☎</span>
           <span>087 648 927 472</span>
         </a>
         <div class="flex items-start gap-3 py-3">
-          <span style="color: var(--accent);">📍</span>
-          <span style="color: var(--ink-soft);">Jl. Kresna, Br. Pempatan, Sembung, Kec. Mengwi, Kab. Badung, Bali</span>
+          <span>📍</span>
+          <span>Jl. Kresna, Br. Pempatan, Sembung, Kec. Mengwi, Kab. Badung, Bali</span>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="border-t py-8 text-center text-xs" style="border-color: var(--line); color: var(--ink-soft);">
+  <footer class="py-8 text-center text-xs text-white bg-gray-900">
     © 2026 Janu Putra. Dibuat dengan niat baik dan secangkir kopi.
   </footer>
 
